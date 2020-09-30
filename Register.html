@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<title>My university</title><center>
+<img src="LOGO.png"></center>
+<body style="background-color:LemonChiffon;">
+<button onclick="goBack()">HOME</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+<style>
+
+.header{  width:100%; height:100px; background:NavajoWhite;  border-radius:  50px; font-size: 40px; text-align:  Centre;}
+
+.footer{   width :100%; padding:100px;  background:  NavajoWhite; border-radius:50px;text-align:  Centre;}
+  </style>
+ 
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/920E36DC-3C46-1941-931C-7AB5953883BC/main.js" charset="UTF-8"></script>
+<body >
+
+<div  class="header">
+  <center><h1="color:LemonChiffon;">
+<font size="35"> <b> SEEKSHA UNIVERSITY</b> </font>
+  </center>  </h1>
+
+</div>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="contact">
+  <div class="w3-content">
+           <a name="button"></a>
+    <div class="w3-twothird">
+      <h1>Contact Us</h1>
+      <form action="home.html" name = "myForm" onsubmit = "return(validate());">
+ <fieldset>
+  <h3>Personal Details</h3>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" ><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="Email"  size="50"><br><br>
+  <label for="phone-number">PhoneNumber:</label>
+  <input type="text"id="phonenumber" name="phonenumber" ><br><br>
+  <label for="birthday">DOB:</label>
+  <input type="date" id="birthday" name="birthday" ><br><br>
+  <label for="Zip">Zip:</label>
+  <input type = "text" name = "Zip" /><br><br>
+  <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="others" name="gender" value="female">
+  <label for="female">Others</label><br><br>
+  <label for="country" .>Choose your Place:</label>
+  <select name="Country" id="country">
+     <option value = "1">USA</option>
+     <option value = "2">UK</option>
+    <option value = "3">INDIA</option>
+  </select>
+  <br><br>
+      <h4>Enquire Regarding  :</h4><br>
+      <input type="checkbox" id="1" name="1" value="Admission">
+  <label for="Admission"> Admissions </label><br>
+  <input type="checkbox" id="2" name="2" value="Fee">
+  <label for="Fee"> Fees </label><br>
+  <input type="checkbox" id="3" name="3" value="Hostel">
+  <label for="Hostel bookings"> Hostel</label><br><br>
+  <label for="description">About :</label><br><br>
+<textarea id="description" name="description" rows="4" cols="50">
+  Write about your Enquiry.
+  </textarea>
+  <br><br>
+  <input type="submit" >
+ </fieldset>
+</form>
+    </div>
+
+    <div class="w3-third w3-center">
+     
+    </div>
+  </div>
+</div>
+<p id="demo"></p>
+
+<!-- Second Grid -->
+<!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      
+
+    </div>
+
+    <div class="w3-twothird">
+      
+      
+    </div>
+  </div>
+</div> -->
+<!-- Footer -->
+<div class="footer">
+<h2>
+<button type="button" onclick="alert('thank you for visting')">Click Me!</button>
+ <p><a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our course patner</a></p>
+ 
+
+  copyright   @2018SEEKSHA UNIVERSITY
+!
+</h2>
+</div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.reFee(" w3-show", "");
+  }
+}
+
+     // Form validation code will come here.
+      function validate() {
+        var fname = document.myForm.fname.value;
+        var fnameRGEX = /^[a-zA-Z]*$/;
+        var fnameResult = fnameRGEX.test(fname);
+        var phoneNumber = document.myForm.phonenumber.value;
+        var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+        var phoneResult = phoneRGEX.test(phoneNumber);
+        if(fnameResult == false)
+                  {
+                    alert('Please enter a valid first name');
+                    return false;
+                  }
+      if( document.myForm.fname.value == "" ) {
+            alert( "Please provide your first name!" );
+            document.myForm.fname.focus() ;
+            return false;
+              }
+
+         if( document.myForm.lname.value == "" ) {
+            alert( "Please provide your last name!" );
+            document.myForm.lname.focus() ;
+            return false;
+         }
+        
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 6 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         if( document.myForm.Country.value == "-1" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         if(phoneResult == false)
+              {
+                alert('Please enter a valid phone number');
+                return false;
+              }
+         return( true );
+      }
+      function validateEmail() {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+
+</body>
+</html>
