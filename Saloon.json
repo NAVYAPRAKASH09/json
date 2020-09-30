@@ -1,7 +1,7 @@
 [
-	{"Package_ID":"19471","Package_Name":"HairCut","Package_Cost":"100$","AddON":"Threading"},
-	{"Package_ID":"39472","Package_Name":"Facial","Package_Cost":"200$","AddON":"eyebrows"},
-	{"Package_ID":"39473","Package_Name":"waxing","Package_Cost":"450$","AddON":"upperlips"},
-	{"Package_ID":"19474","Package_Name":"Drapping","Package_Cost":"1000$","AddON":"waxing"},
-	{"Package_ID":"19547","Package_Name":"Spa","Package_Cost":"338$","AddON":"eyebrows"}
+	{"Travels_id":"012","Travels_name":"abc","Package_Cost":"100$","No_of_Days":"2"},
+	{"Travels_id":"345","Travels_name":"def","Package_Cost":"200$","No_of_Days":"4"},
+	{"Travels_id":"678","Travels_name":"ghi","Package_Cost":"450$","No_of_Days":"6"},
+	{"Travels_id":"910","Travels_name":"jkl","Package_Cost":"1000$","No_of_Days":"3"},
+	{"Travels_id":"111","Travels_name":"mno","Package_Cost":"338$","No_of_Days":"3"}
 ]
